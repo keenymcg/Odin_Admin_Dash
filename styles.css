@@ -1,0 +1,48 @@
+
+/* DASHBOARD */
+
+.dashHeading {
+    size: 17px;
+    color: white;
+}
+
+.bigDashIcon {
+    height: 20px;
+    width: 20px;
+    color: white;
+}
+
+.dashIcon {
+    height: 10px;
+    width: 10px;
+    color: white;
+}
+
+/* HEADER */
+
+.bigUserIcon {
+    height: 60px;
+    width: 60px;
+}
+
+
+/* PROJECTS */
+
+.eachProjIcon {
+    height: 10px;
+    width: 10px;
+    color: black;
+}
+
+.eachProjIcon:hover {
+    color: gold;
+}
+
+
+
+/* TRENDING */
+
+.userIcon {
+    height: 30px;
+    width: 30px;
+}
