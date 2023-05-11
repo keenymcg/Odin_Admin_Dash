@@ -25,6 +25,11 @@
     width: 60px;
 }
 
+.addContentBtns {
+    background-color: red;
+    color: white;
+}
+
 
 /* PROJECTS */
 
