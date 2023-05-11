@@ -1,3 +1,13 @@
+/* CONTAINER */ 
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr minmax(3fr) 1fr;
+    /* 
+    add min-max
+    add auto-fit?
+    */
+}
 
 /* DASHBOARD */
 
@@ -19,6 +29,10 @@
 }
 
 /* HEADER */
+
+.searchBar {
+
+}
 
 .bigUserIcon {
     height: 60px;
