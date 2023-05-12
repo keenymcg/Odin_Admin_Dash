@@ -91,8 +91,9 @@
     margin: 20px 10px 10px 20px;
 }
 
-.searchBar {
-
+.username {
+    align-self: center;
+    margin: 0 6px 0 0;
 }
 
 .headerBttm {
@@ -107,18 +108,30 @@
 }
 
 .bigUserIcon {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
+    align-self: center;
 }
 
 .nameAndTagCol {
     flex-direction: column;
+    padding-left: 10px;
 }
 
 .userNameAndTag {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.nameAndTagCol > h5 {
+    margin: 18px 0 0 0;
+    display: flex-start;
+    align-self: center;
+}
+
+.userTag {
+    margin: 0;
 }
 
 .addContentBtns {
@@ -154,6 +167,6 @@
 /* MAIN > TRENDING */
 
 .userIcon {
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
 }
