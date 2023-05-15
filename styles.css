@@ -1,9 +1,13 @@
+body {
+    margin: 0;
+}
+
 /* CONTAINER */ 
 
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    background-color: rgb(239, 239, 239);
     /* 
     add min-max
     add auto-fit?
@@ -30,8 +34,9 @@
 }
 
 .dashHeading {
-    font-size: 1.8em;
-    color: white;
+    font-size: 1.5em;
+    color: rgb(255, 252, 252);
+    font-family: Arial, Helvetica, sans-serif;
     margin-right: 30px;
 }
 
@@ -41,6 +46,10 @@
     color: white;
 }
 
+.navList {
+    margin-top: 15px;
+}
+
 .navItems {
     display: flex;
     justify-content: flex-start;
@@ -48,8 +57,9 @@
 }
 
 .navItems > h2 {
-    color: white;
-    font-size: 1.5em;
+    color: rgb(252, 252, 252);
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     margin: 0;
 }
@@ -57,6 +67,10 @@
 .navItems > img {
     padding: 10px;
     margin-left: 15px;
+}
+
+.navAdvanced {
+    margin-top: 35px;
 }
 
 .dashIcon {
@@ -78,7 +92,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto 20px;
+    margin: 15px 20px;
+}
+
+.search {
+    width: 30vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.searchBar {
+    width: 100%;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
 }
 
 .headerTop .search, .userIcons {
@@ -87,8 +114,8 @@
     align-items: center;
 }
 
-.userIcons .eachProjIcon, .userIcon, .username {
-    margin: 20px 10px 10px 20px;
+.userIcons > * {
+    padding-left: 20px;
 }
 
 .username {
@@ -100,7 +127,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto 20px;
+    margin: 0 20px;
 }
 
 .userWelcome {
@@ -116,6 +143,7 @@
 .nameAndTagCol {
     flex-direction: column;
     padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .userNameAndTag {
@@ -134,10 +162,22 @@
     margin: 0;
 }
 
+.addContent {
+    margin-right: 15px;
+}
+
 .addContentBtns {
     background-color: red;
     color: white;
+    border-radius: 9px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-style: italic;
+    margin: auto 5px;
 }
+
+
 
 
 /* MAIN > PROJECTS */
@@ -145,7 +185,7 @@
 .main {
     display: grid;
     grid-column: 2 / 4;
-    grid-template-columns: 4fr 1fr; /* CONSIDER making this 3fr to have cool bleed-over effect of right panel*/
+    grid-template-columns: 3fr 1fr; /* CONSIDER making this 3fr to have cool bleed-over effect of right panel*/
 }
 
 .eachProjIcon {
@@ -158,15 +198,150 @@
     color: gold;
 }
 
+.projects {
+    margin: 10px 10px 0 10px;
+}
+
+.projContainerTitle {
+    margin: 10px auto 6px 15px;
+    font-size: 18px;
+}
+
+.projsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10px 0 10px;
+}
+
+.project {
+    border-left: 5px solid red;
+    border-radius: 5px;
+    padding: 30px 25px 20px 10px;
+    margin: 5px 15px 5px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+    min-width: 300px;
+    box-shadow: 2px 2px 5px rgb(170, 170, 170);
+    background-color: rgb(255, 244, 240);
+    /* 
+    Set max width so only two columns will be on the page, or would it be min-width? 
+    and also do auto-fit so that it goes to the next row?
+    */
+}
+
+.projHeading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.projDescrip {
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(89, 89, 89);
+    margin-top: 5px;
+}
+
+.projIcons {
+    text-align: right;
+    padding-right: 20px;
+}
+
+
 /* MAIN > ANNOUNCEMENTS */
+
+.announceAndTrendContainer {
+    margin: auto 20px auto auto;
+    min-width: 300px;
+}
 
 .announcements {
     grid-column: 2 / 4;
+    border: 1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(170, 170, 170);
+    background-color: rgb(255, 244, 240);
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.announceCont {
+    border-bottom: 1px solid rgb(218, 201, 201);
+    padding: 20px 10px;
+}
+
+.announceContLast {
+    padding: 20px 10px;
+}
+
+.announceTitle {
+    font-weight: 800;
+}
+
+.announceText {
+    margin: 5px 0;
 }
 
 /* MAIN > TRENDING */
 
+.sectionHeaders {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.trending {
+    border: 1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(170, 170, 170);
+    background-color: rgb(255, 244, 240);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.trendingUser {
+    grid-column: 1 / 3;
+    display: grid;
+    margin-bottom: 10px;
+    align-items: center;
+    vertical-align: center;
+}
+
+.heyo {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: center;
+}
+
+.userNameAlt {
+    font-weight: bold;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.userSubHeadCont {
+    text-align: left;
+}
+
+.userSubHead {
+    margin: 3px 0 5px 0;
+    display: flex;
+    text-align: flex-start;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .userIcon {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
+}
+
+.altUserIcon {
+    height: 40px;
+    width: 40px;
 }
