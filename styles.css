@@ -36,7 +36,7 @@ body {
 .dashHeading {
     font-size: 1.5em;
     color: rgb(255, 252, 252);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin-right: 30px;
 }
 
@@ -106,6 +106,8 @@ body {
     margin-left: 10px;
     padding-left: 10px;
     border-radius: 10px;
+    border: none;
+    background-color: rgb(253, 213, 213); /* TODO: Add searchbar example text */
 }
 
 .headerTop .search, .userIcons {
@@ -150,12 +152,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    font-size: 22px;
 }
 
 .nameAndTagCol > h5 {
     margin: 18px 0 0 0;
     display: flex-start;
     align-self: center;
+    font-size: 15px;
 }
 
 .userTag {
@@ -217,7 +221,7 @@ body {
     border-left: 5px solid red;
     border-radius: 5px;
     padding: 30px 25px 20px 10px;
-    margin: 5px 15px 5px 5px;
+    margin: 5px 15px 15px 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
